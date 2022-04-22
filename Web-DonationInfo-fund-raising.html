@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ad720275e.js" crossorigin="anonymous"></script>
+    <title>Fund Raising</title>
+    <style>
+        
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row custom-tp-navbar">
+            <div class="col-lg-12 bluebar">
+
+            </div>
+            <div class="col-lg-12 whitebar">              
+                <div class="container">
+                    
+                       <nav class="w-100">
+                           <div class="col-lg-12">
+                               
+                                   <div class="custom-navbar col-lg-12">
+                                       <div class="row">
+                                           <div class="d-flex justify-content-center align-items-center custom-navbar-inner">                                                
+                                                   <ul class="navbar-nav d-flex flex-row justify-content-center m-auto ticket-navbar">
+                                                       <li class="nav-item">
+                                                           <a class="nav-link" href="#">Donate</a>
+                                                         </li>
+                                                         <li class="nav-item">
+                                                           <a class="nav-link active" href="#">Tickets</a>
+                                                         </li>                                          
+                                                   </ul>
+
+                                                   <div class="dropdown mr-0 ml-auto">
+                                                       <ul class="navbar-right d-flex">
+                                                           <li><a href="#" id="cart"><div class="shop-cart"></div><span class="badge">3</span></a>
+                                                            <div class="shopping-cart">
+                                                                <div class="shopping-cart-header">                        
+                                                                    <div class="shopping-cart-owner">
+                                                                         <span class="owner-title bolder">Mark's Cart</span>                          
+                                                                    </div>
+                                                                </div> <!--end shopping-cart-header -->
+                                                          
+                                                                <ul class="shopping-cart-items">
+                                                                    <li class="clearfix d-flex justify-content-between align-items-center">
+                                                                        <div class="evt-img col-2"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" class="img-fluid" alt="item1"></div>
+                                                                        <div class="team-details col-6">
+                                                                        <div class="team-details-inner d-flex flex-column">
+                                                                            <div class="t-row t-name bolder"> Eagles vs. Lions</div>
+                                                                            <div class="t-row t-section">Section <span class="bolder">A</span> <span class="seperator">|</span> Row <span class="bolder">23</span></div>
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="evt-quantity col-2">
+                                                                            QTY
+                                                                            <span class="bolder">3</span>
+                                                                        </div>
+                                                                        <div class="evt-price col-1 bolder">
+                                                                        $120
+                                                                        </div>
+                                                                        <div class="evt-delete col-1 d-flex justify-content-end">
+                                                                            <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                                                        </div>
+                                                                    </li>
+                                                            
+                                                                    <li class="clearfix d-flex justify-content-between align-items-center">
+                                                                        <div class="row-dtls col-10">
+                                                                        <span class="bolder">Donation</span>
+                                                                            for Mathew Verges
+                                                                        </div>                                
+                                                                        <div class="row-price col-1 bolder">
+                                                                        $120
+                                                                        </div>
+                                                                        <div class="row-delete col-1  d-flex justify-content-end">
+                                                                            <i class="far fa-trash-alt" aria-hidden="true"></i>
+                                                                        </div>
+                                                                    </li>
+                                                            
+                                                                    <li class="clearfix d-flex justify-content-between align-items-center">
+                                                                        <div class="row-dtls col-10">
+                                                                            <span class="bolder">Total</span>
+                                                                            before taxes
+                                                                        </div>
+                                                                        <div class="row-price col-2 bolder">
+                                                                            $170.00
+                                                                        </div>
+                                                                        
+                                                                    </li>
+                                                                </ul>                          
+                                                                <a href="#" class="button-checkout">Checkout</a>
+                                                            </div><!--End of cart-->
+                                                        </li>
+                                                           <li> <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+                                                               <i class="fa fa-user" aria-hidden="true"></i>
+                                                           </a>
+                                                           <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown">
+                                                               <!-- Profile info -->
+                                                               <li class="px-3">
+                                                                   <div class="d-flex align-items-center">
+                                                                       <!-- Avatar -->
+                                                                       <div class="avatar me-3">
+                                                                           <img class="avatar-img rounded-circle img-fluid w-5" src="https://picsum.photos/100" alt="avatar">                                                   
+                                                                       </div>
+                                                                       <div>
+                                                                           <a class="h6" href="#">Lori Ferguson</a>
+                                                                           <p class="small m-0">example@gmail.com</p>
+                                                                       </div>
+                                                                   </div>
+                                                                   <hr>
+                                                               </li>
+                                                               <!-- Links -->
+                                                               <li><a class="dropdown-item" href="#"><i class="bi bi-person fa-fw me-2"></i>Edit Profile</a></li>
+                                                               <li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Account Settings</a></li>
+                                                               <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-2"></i>Help</a></li>
+                                                               <li><a class="dropdown-item bg-danger-soft-hover" href="#"><i class="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
+                                                               <li> <hr class="dropdown-divider"></li>
+                                                               <!-- Dark mode switch START -->
+                                                               <li>
+                                                                   <div class="modeswitch-wrap" id="darkModeSwitch">
+                                                                       <div class="modeswitch-item">
+                                                                           <div class="modeswitch-icon"></div>
+                                                                       </div>
+                                                                       <span>Dark mode</span>
+                                                                   </div>
+                                                               </li> 
+                                                     <!-- Dark mode switch END -->
+                                                           </ul></li>
+                                                       </ul> <!--end navbar-right -->                                                      
+                                                   </div>
+                                               </div>                                               
+                                           </div>                                          
+                                       </div>
+                                   </div>
+       
+                                   <!-- Profile START -->
+                                   
+                               <!-- </div> -->
+                           </nav></div>
+                       
+                       
+                   </div>
+                   <div class="container">
+                       
+                   </div> <!--end container -->
+                </div>
+       
+
+        <div class="row">
+           <div class="col-lg-12">
+                <section class="my-5 checkout-main">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="view-donation-bar mb-4 py-3 px-4">
+                                    <div class="d-flex">
+                                        <div class="left-cont">
+                                            <div class="d-flex">
+                                                <div class="star-i pe-2 d-none d-sm-none d-md-block">
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="donation-details">
+                                                    11 people you invited have donated <span class="bold"> $200.00 </span> in total. You have donated <span class="bold">$40.30</span>.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-cont me-0 ms-auto">
+                                            <span class="bold"><a href=#>Invite More</a></span> <i class="fas fa-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">                      
+                                <div class="col-lg-8">
+                                    <div class="p-4 mb-4 rounded team-header-details">
+                                        <div class="d-flex team-name align-items-center">
+                                            <div class="team-profile">
+                                                <img src="image/team-logo.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="team-name ms-4">
+                                                <h1>East High School Sports Team</h1>
+                                            </div>
+                                        </div>
+                                        <div class="amount-details mt-5 d-flex justify-content-between">
+                                            <div class="w-100">
+                                                <div class="d-flex">
+                                                    <div class="raised-amount ms-0 me-auto">
+                                                        RAISED <span class="bolder">$899</span>
+                                                    </div>
+                                                    <div class="Goal-amount me-0 ms-auto">
+                                                        Goal <span class="bolder">$1,500</span>
+                                                    </div>
+                                                </div>
+                                            </div>                                           
+                                        </div>
+                                        <div class="progressBar">
+                                            <!-- <h4>HTML5</h4> -->
+                                            <div class="progressBarcontainer">
+                                                <div class="speech-bubble html" style="display: block;"> </div>
+                                                <div class="progressBarValue ht " style="width: 70%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="about-foundraiser p-4 my-4 rounded">
+                                        <div class="tvideo">
+                                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/nV5zndjlv7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                        <h2 class="my-4"> About Our Fundraiser </h2>
+                                        <p>Nunc nec orci in turpis posuere fermentum. Cras euismod nibh vel ornare aliquam. Vivamus nunc risus, dapibus quis porttitor et, scelerisque in justo. Vivamus imperdiet dapibus libero. Duis dignissim pulvinar arcu id facilisis. Vestibulum ex eros, hendrerit sagittis justo at, tincidunt cursus mi. Etiam luctus orci non lorem laoreet tristique et vel lacus. In ultricies lacus sed lectus vulputate, ut suscipit nunc congue. Proin ac lorem porta, tristique ipsum non, tempus tortor.</p>
+                                    </div>
+
+                                    <div class="follow-instagram">
+                                        <div class="row">
+                                            <div class="col-lg-12 my-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="ms-0 me-auto">
+                                                        <h5>Follow us on Instagram!</h5>
+                                                    </div>
+                
+                                                    <div class="me-0 ms-auto">
+                                                       <img src="image/instagram-follow.png"> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-4 rounded acount-img mb-3">
+                                                <img src="image/small-team.jpg" class="rounded img-fluid" alt="...">
+                                            </div>
+                                            <div class="col-lg-4 rounded acount-img mb-3">
+                                                <img src="image/small-team.jpg" class="rounded img-fluid" alt="...">
+                                            </div>
+                                            <div class="col-lg-4 rounded acount-img mb-3">
+                                                <img src="image/small-team.jpg" class="rounded img-fluid" alt="...">
+                                            </div>
+                                            <div class="col-lg-4 rounded acount-img mb-3">
+                                                <img src="image/small-team.jpg" class="rounded img-fluid" alt="...">
+                                            </div>
+                                            <div class="col-lg-4 rounded acount-img mb-3">
+                                                <img src="image/small-team.jpg" class="rounded img-fluid" alt="...">
+                                            </div>
+                                            <div class="col-lg-4 rounded acount-img mb-3">
+                                                <img src="image/small-team.jpg" class="rounded img-fluid" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="donation-progress mb-4 pb-4">
+                                        <div class="d-flex">
+                                            <div class="amount-loader">
+                                                <div class="percent">
+                                                    <p style="display:none">70%</p>
+                                                </div>
+                                            </div>
+                                            <div class="donation-value ms-4">
+                                                <div class="d-flex flex-column">
+                                                    <div class="raised-caption">
+                                                        <span class="d-block text-uppercase raised">Raised</span>
+                                                        <div class="raised-amount"><span class="amount">$899</span>  <span class="total">of $1,500</span></div>
+                                                    </div>
+                                                    <div class="time-count-down my-3">
+                                                        <div class="d-flex">
+                                                            <div class="days text-center mx-2">
+                                                                <span class="value d-block">18</span>
+                                                                <span class="caption">Days</span>                                                                
+                                                            </div>
+                                                            <div class="hours text-center mx-2">
+                                                                <span class="value d-block">09</span>
+                                                                <span class="caption">Hrs</span>                                                                
+                                                            </div>
+                                                            <div class="min text-centerk mx-2">
+                                                                <span class="value d-block">50</span>
+                                                                <span class="caption">min</span>                                                                
+                                                            </div>
+                                                            <div class="sec text-center mx-2">
+                                                                <span class="value d-block">25</span>
+                                                                <span class="caption">sec</span>                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                     
+                                    <div class="suggested-donation-list">
+                                        <ol class="list-group">
+                                            <h2>Suggested donation amount</h2>
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="me-auto">
+                                                    <div class="fw-bold">After Practice Snacks!</div>
+                                                    <small>$5 donation</small>
+                                                    <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
+                                                    <a href="#" class="btn secondary-btn w-100 mt-2" tabindex="-1" role="button" aria-disabled="true">Donate $5</a>
+                                                </div>                                        
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="me-auto">
+                                                    <div class="fw-bold">After Practice Snacks!</div>
+                                                    <small>$5 donation</small>
+                                                    <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
+                                                    <a href="#" class="btn secondary-btn w-100 mt-2" tabindex="-1" role="button" aria-disabled="true">Donate $25</a>
+                                                </div>    
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="me-auto">
+                                                    <div class="fw-bold">After Practice Snacks!</div>
+                                                    <small>$5 donation</small>
+                                                    <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
+                                                    <a href="#" class="btn secondary-btn w-100 mt-2" tabindex="-1" role="button" aria-disabled="true">Donate $50</a>
+                                                </div>    
+                                            </li>  
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="me-auto">
+                                                    <div class="fw-bold">After Practice Snacks!</div>
+                                                    <small>$5 donation</small>
+                                                    <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
+                                                    <a href="#" class="btn secondary-btn w-100 mt-2" tabindex="-1" role="button" aria-disabled="true">Donate $100</a>
+                                                </div>    
+                                            </li> 
+                                            <li class="list-group-item d-flex justify-content-between align-items-start other-amt">
+                                                <div class="me-auto w-100">
+                                                    <div class="fw-bold">Other Amount</div> 
+                                                    <a href="#" class="btn other-amt-dw w-100 mt-2" tabindex="-1" role="button" aria-disabled="true">Donate <i class="fa fa-chevron-down"></i></a>                                              
+                                                   
+                                                </div>    
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-start other-amt-detail d-none">
+                                                <div class="me-auto w-100">
+                                                    <!-- Other Amount-->
+                                                    <div class="other-amt-dtls-card">
+                                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                            <li class="nav-item" role="presentation">
+                                                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Subscription</button>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">1-Time Donation </button>
+                                                            </li> 
+                                                            <i class="fa fa-chevron-up" id="close-card"></i>                                                           
+                                                          </ul>
+                                                          <div class="tab-content" id="myTabContent">
+                                                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                                <div class="d-flex align-items-end">
+                                                                    <div class="amount-cap">
+                                                                        Amount
+                                                                    </div>
+                                                                    <div class="amount-value me-0 ms-auto">
+                                                                        $25.00
+                                                                    </div>
+                                                                </div>
+                                                                <div class="amount-range my-3">
+                                                                    <div class="styled_range">
+                                                                        <div class="range-wrap">
+                                                                            <input type="range" class="range" min="0" max="100">
+                                                                                <output class="bubble d-none"></output>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="amount-desc">
+                                                                    <p><span class="bold"> Impact: </span> With your donation of $25.00 we will be able to buy our sport jerseys.<i class="far fa-question-circle"></i></p>
+                                                                </div>
+                                                                <div class="donating-for">
+                                                                    <form class="row g-3"> 
+                                                                        <div class="col-12">
+                                                                          <label for="inputAddress" class="form-label">Who are you donating for?</label>
+                                                                          <input type="text" class="form-control" id="inputAddress" placeholder="Type their name…">
+                                                                        </div>  
+                                                                        <div class="col-12 button-container">
+                                                                            <button type="button" class="btn custom-btn-cyan w-100" data-bs-toggle="modal" data-bs-target="#Subscription-payment-confirm">Donate</button>
+                                                                        </div>
+                                                                      </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">I7YUIUKKUK</div>                                                            
+                                                          </div>
+                                                    </div>
+                                                    <!-- End of other amount-->
+                                                </div>    
+                                            </li>                                         
+                                        </ol> 
+                                    </div>
+                                    <div class="donation-sharing my-4"> 
+                                        <h5>Share on Social Media</h5>
+                                        <div id="share" class="d-flex mx-auto pb-4">
+                                            <!-- facebook -->
+                                            <div class="facebook d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-facebook"></i></a></div>                                          
+                                            <!-- twitter -->
+                                            <div class="twitter d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-twitter"></i></a></div>                                          
+                                            <!-- google plus -->
+                                            <div class="linkedin d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-google-plus"></i></a></div>                                          
+                                            <!-- linkedin -->
+                                            <div class="googleplus d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-linkedin"></i></a></div>                                            
+                                            <!-- pinterest -->
+                                            <div class="pinterest d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-pinterest-p"></i></a></div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="creator-details my-4"> 
+                                        <h5>Created on Jun 10, 2018</h5>
+                                        <div id="creator" class="d-flex">
+                                            
+                                            <div class="creator-profile-pic">
+                                                <img src="image/creator-profile.png" class="img-fluid">
+                                            </div>                                          
+                                            <div class="creator-profile-details d-flex flex-column ms-4">
+                                                <div class="creator-name bold">Eliot Clark</div>
+                                                <div class="creator-email">Coach @ Crest Middle School</div>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="our-supporter py-4 rounded">
+                                        <ol class="list-group">
+                                            <li class="list-group-item supporter-header">
+                                                <div class="creator-details mt-2 d-flex"> 
+                                                    <h5 class="d-inline-block ms-2 me-auto" >Created on Jun 10, 2018 <span class="badge rounded-circle">18</span></h5>
+                                                    <a href="#" class="me-0 ms-auto supporter-all">View All</a>                                                   
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="creator-profile-pic">
+                                                    <img src="image/creator-profile.png" class="img-fluid">
+                                                </div>
+                                                <div class="ms-3 me-auto">
+                                                    <div class="price-supporter">$40 for<span xlass="bold"> Jane Doe</span></div>
+                                                    <div class="name-supporter bold">John Doe</div>
+                                                    <div class="support-time">12 min ago</div>
+                                                </div>                                              
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="creator-profile-pic">
+                                                    <img src="image/creator-profile.png" class="img-fluid">
+                                                </div>
+                                                <div class="ms-3 me-auto">
+                                                    <div class="price-supporter">$40 for<span class="bold"> Jane Doe</span></div>
+                                                    <div class="name-supporter bold">John Doe</div>
+                                                    <div class="support-time">12 min ago</div>
+                                                </div>      
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="creator-profile-pic">
+                                                    <img src="image/creator-profile.png" class="img-fluid">
+                                                </div>
+                                                <div class="ms-3 me-auto">
+                                                    <div class="price-supporter">$40 for<span class="bold"> Jane Doe</span></div>
+                                                    <div class="name-supporter bold">John Doe</div>
+                                                    <div class="support-time">12 min ago</div>
+                                                </div>      
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="creator-profile-pic">
+                                                    <img src="image/creator-profile.png" class="img-fluid">
+                                                </div>
+                                                <div class="ms-3 me-auto">
+                                                    <div class="price-supporter">$40 for<span class="bold"> Jane Doe</span></div>
+                                                    <div class="name-supporter bold">John Doe</div>
+                                                    <div class="support-time">12 min ago</div>
+                                                </div>      
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                                <div class="creator-profile-pic">
+                                                    <img src="image/creator-profile.png" class="img-fluid">
+                                                </div>
+                                                <div class="ms-3 me-auto">
+                                                    <div class="price-supporter">$40 for<span class="bold"> Jane Doe</span></div>
+                                                    <div class="name-supporter bold">John Doe</div>
+                                                    <div class="support-time">12 min ago</div>
+                                                </div>      
+                                            </li>
+                                          </ol>
+                                    </div>
+                                </div>                         
+                        </div>                    
+                    </div>
+                </section>
+           </div>
+        </div><!-- end of row2 -->
+         <!-- Subscription payment popup-->
+         <div class="modal fade" id="Subscription-payment-confirm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content mx-auto">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                  
+                </div>
+                <div class="modal-body">
+                    Opt out of subscription payments?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="cancel" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn custom-btn-cyan me-0 ms-auto" data-bs-toggle="modal" data-bs-target="#Subscription-thankyou">Confirm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- End of Subscription payment popup-->
+
+        <!-- Subscription thankyou payment popup-->
+        <div class="modal fade" id="Subscription-thankyou" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content mx-auto">
+                    <div class="modal-header">                    
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="image/Thank-you-support.jpg" class="img-fluid">
+                        <h2 class="my-3">Thank you for your support</h2>
+                        <p class="text-left my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    </div>
+                    <div class="Share-this-fundraiser ms-auto me-auto">
+                        <div class="donation-sharing mb-4"> 
+                            <h5>Share on Social Media</h5>
+                            <div id="share" class="d-flex mx-auto pb-4 flex-wrap">
+                                <!-- facebook -->
+                                <div class="facebook d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>                                          
+                                <!-- twitter -->
+                                <div class="twitter d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>                                          
+                                <!-- google plus -->
+                                <div class="linkedin d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>                                          
+                                <!-- linkedin -->
+                                <div class="googleplus d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>                                            
+                                <!-- pinterest -->
+                                <div class="pinterest d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></div> 
+                                <!--mesage-->
+                                <div class="messang d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>   
+                                <!-- chat-->
+                                <div class="cust-chat d-flex align-items-center justify-content-center"><a href="#" target="blank"><i class="fa fa-comments" aria-hidden="true"></i></a></div> 
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- End of Subscription thank you payment popup-->
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>    
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js'></script>
+    <script src="js/fundraiser-front-end.js"></script>
+ 
+  </body>
+</html>

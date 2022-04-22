@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ad720275e.js" crossorigin="anonymous"></script>
+    <title>Tickets</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row custom-tp-navbar">
+            <div class="col-lg-12 bluebar"></div>
+            <div class="col-lg-12 whitebar">
+              <div class="container">
+                <nav class="w-100">
+                  <div class="col-lg-12">
+                    <div class="custom-navbar col-lg-12">
+                      <div class="row">
+                        <div class="d-flex justify-content-center align-items-center custom-navbar-inner">
+                          <ul class="navbar-nav d-flex flex-row justify-content-center m-auto ticket-navbar">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Donate</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" href="#">Tickets</a>
+                            </li>
+                          </ul>
+                          <div class="dropdown mr-0 ml-auto">
+                            <ul class="navbar-right d-flex">
+                              <li>
+                                <a href="#" id="cart">
+                                  <div class="shop-cart"></div>
+                                  <span class="badge">3</span>
+                                </a>
+                                <div class="shopping-cart">
+                                  <div class="shopping-cart-header">
+                                    <div class="shopping-cart-owner">
+                                      <span class="owner-title bolder">Mark's Cart</span>
+                                    </div>
+                                  </div>
+                                  <!--end shopping-cart-header -->
+                                  <ul class="shopping-cart-items">
+                                    <li class="clearfix d-flex justify-content-between align-items-center">
+                                      <div class="evt-img col-2">
+                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" class="img-fluid" alt="item1" />
+                                      </div>
+                                      <div class="team-details col-6">
+                                        <div class="team-details-inner d-flex flex-column">
+                                          <div class="t-row t-name bolder"> Eagles vs. Lions</div>
+                                          <div class="t-row t-section">Section <span class="bolder">A</span>
+                                            <span class="seperator">|</span> Row <span class="bolder">23</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="evt-quantity col-2"> QTY <span class="bolder">3</span>
+                                      </div>
+                                      <div class="evt-price col-1 bolder"> $120 </div>
+                                      <div class="evt-delete col-1 d-flex justify-content-end">
+                                        <i class="fa fa-trash"></i>
+                                      </div>
+                                    </li>
+                                    <li class="clearfix d-flex justify-content-between align-items-center">
+                                      <div class="row-dtls col-10">
+                                        <span class="bolder">Donation</span> for Mathew Verges
+                                      </div>
+                                      <div class="row-price col-1 bolder"> $120 </div>
+                                      <div class="row-delete col-1  d-flex justify-content-end">
+                                        <i class="fa fa-trash"></i>
+                                      </div>
+                                    </li>
+                                    <li class="clearfix d-flex justify-content-between align-items-center">
+                                      <div class="row-dtls col-10">
+                                        <span class="bolder">Total</span> before taxes
+                                      </div>
+                                      <div class="row-price col-2 bolder"> $170.00 </div>
+                                    </li>
+                                  </ul>
+                                  <a href="#" class="button-checkout">Checkout</a>
+                                </div>
+                                <!--End of cart-->
+                              </li>
+                              <li>
+                                <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa fa-user" aria-hidden="true"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown">
+                                  <!-- Profile info -->
+                                  <li class="px-3">
+                                    <div class="d-flex align-items-center">
+                                      <!-- Avatar -->
+                                      <div class="avatar me-3">
+                                        <img class="avatar-img rounded-circle img-fluid w-5" src="https://picsum.photos/100" alt="avatar">
+                                      </div>
+                                      <div>
+                                        <a class="h6" href="#">Lori Ferguson</a>
+                                        <p class="small m-0">example@gmail.com</p>
+                                      </div>
+                                    </div>
+                                    <hr>
+                                  </li>
+                                  <!-- Links -->
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <i class="bi bi-person fa-fw me-2"></i>Edit Profile </a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <i class="bi bi-gear fa-fw me-2"></i>Account Settings </a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">
+                                      <i class="bi bi-info-circle fa-fw me-2"></i>Help </a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item bg-danger-soft-hover" href="#">
+                                      <i class="bi bi-power fa-fw me-2"></i>Sign Out </a>
+                                  </li>
+                                  <li>
+                                    <hr class="dropdown-divider">
+                                  </li>
+                                  <!-- Dark mode switch START -->
+                                  <li>
+                                    <div class="modeswitch-wrap" id="darkModeSwitch">
+                                      <div class="modeswitch-item">
+                                        <div class="modeswitch-icon"></div>
+                                      </div>
+                                      <span>Dark mode</span>
+                                    </div>
+                                  </li>
+                                  <!-- Dark mode switch END -->
+                                </ul>
+                              </li>
+                            </ul>
+                            <!--end navbar-right -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Profile START -->
+                  <!-- </div> -->
+              </div>
+              </nav>
+            </div>
+            <div class="container"></div>
+            <!--end container -->
+        </div>
+      <!-- end of row1 -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="container">
+            <div class="back-ticket pt-5 pb-3">
+              <i class="fas fa-arrow-left"></i> back to tickets
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <section class="mb-5 checkout-main">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="rounded purchase-section">
+                    <div class="d-flex justify-content-between purchase-header ps-4 pe-0 pt-5 pb-2 mb-3 mx-4">
+                      <div class="purchase-title">
+                        <h3>Purchase your tickets</h3>
+                        <p>Confirm your seats and finalize your purchase to get your tickets</p>
+                      </div>
+                      <div class="time-counter-block d-flex flex-column align-items-center">
+                        <div class="time-left"> Time Left </div>
+                        <div class="time-counter mt-2 rounded"> 2 Min 00 Sec </div>
+                      </div>
+                    </div>
+                    <div class="seat-reserv">
+                      <h4 class="px-5 pt-4 mb-3"> Seat Reservation</h4>
+                      <div class="d-flex reservation-dtls justify-content-between align-items-center flex-wrap">
+                        <div class="event-details d-flex flex-column">
+                          <div class="event-name">
+                            <span class="name">Eagles vs. Lions</span> 10/24/19 at 7:00 PM
+                          </div>
+                          <div class="event-location "> South Stadium </div>
+                        </div>
+                        <div class="sec-right">
+                          <div class="d-flex-inner d-flex justify-content-between align-items-center">
+                            <div class="event-section d-flex flex-column">
+                              <span class="sec-title">Section </span>
+                              <span class="sec-name">A</span>
+                            </div>
+                            <div class="event-section d-flex flex-column">
+                              <span class="sec-title">Row </span>
+                              <span class="sec-name">23</span>
+                            </div>
+                            <div class="event-section d-flex flex-column">
+                              <span class="sec-title">QTY</span>
+                              <span class="sec-name">3</span>
+                            </div>
+                            <div class="event-section d-flex flex-column">
+                              <span class="sec-remove">Remove</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="no-ticket-section my-3 px-5 d-flex align-items-center">
+                        <div class="save-amount">
+                          <div class="d-flex flex-column">
+                            <div class="save-caption">
+                              <p>
+                                <span class="bold d-block">You saved $10 with no ticket fees!</span>
+                                <small>How much would you like to add as a donation to the Eagles 16 Team?</small>
+                              </p>
+                            </div>
+                            <div class="donation-opt d-flex align-items-center">
+                              <div class="opt d-flex align-items-center"> Donate $25 <span class="info-icon ms-1">i</span>
+                              </div>
+                              <div class="opt d-flex align-items-center"> Donate $50 <span class="info-icon ms-1">i</span>
+                              </div>
+                              <div class="opt d-flex align-items-center"> Donate $100 <span class="info-icon ms-1">i</span>
+                              </div>
+                              <div class="opt d-flex align-items-center no-thanks"> No Thanks </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="amount-value ms-3">
+                          <div class="col me-2 amount">
+                            <input type="text" class="form-control " aria-label="Search" placeholder="$ 10">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="personal-infosection px-5 pb-4">
+                        <h4 class="pt-4 mb-3"> personal infomation</h4>
+                        <div class="personal-info">
+                          <form class="row g-3">
+                            <div class="col-12">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4">
+                              
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputFullname" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="inputFullName">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPhone" class="form-label">Phone Number</label>
+                                <input type="phone" class="form-control" id="inputPhone">
+                              </div>
+                            <div class="col-12">
+                              <label for="inputState" class="form-label">How many extra tickets would you like to donate to the program? ($10 each)</label>
+                              <select id="inputState" class="form-select">
+                                <option selected> (Optional) </option>
+                                <option>dsfsff</option>
+                                <option>dsfsff</option>
+                              </select>
+                            </div>
+                            <div class="col-12">
+                              <label for="inputinterest" class="form-label">Are you interested in any of the following?</label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck"> Local Sports Events </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck"> College Sports Tickets </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck"> Pro Sports Tickets </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn custom-btn-cyan w-100 bold">Continue</button>
+                            </div>
+                            <div class="col-12 text-center">
+                              <p class="donation-note">100% of the donation goes to East High School Football Team</p>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="rounded order-details-section">
+                    <div class="order-hero-img p-5 rounded text-center">
+                      <h3>Your donation supports the East High School Sports Team!</h3>
+                    </div>
+                    <div class="order-details-inner p-5">
+                      <h4 class="d-flex mb-4"> Order Details </h4>
+                      <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                          <div>
+                            <h6 class="my-0">3x Eagles vs. Lions</h6>
+                            <small></small>Standard Tickets </small>
+                          </div>
+                          <span class="text-value">$40.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                          <div>
+                            <h6 class="my-0">Donation</h6>
+                            <small>To Matthew Vergas</small>
+                          </div>
+                          <span class="text-value">$50.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm highlighted">
+                          <div>
+                            <h6 class="my-0">Eagles 16 Team Donation</h6>
+                          </div>
+                          <span class="text-value">$5</span>
+                        </li>
+                        <li class="list-group-item d-flex flex-column subtotal">
+                          <div class="total-inner d-flex justify-content-between">
+                            <div>
+                              <h6 class="my-0">Subtotal</h6>
+                            </div>
+                            <span class="text-value">$188.00</span>
+                          </div>
+                          <div class="total-inner d-flex justify-content-between">
+                            <div>
+                              <h6 class="my-0">Taxes</h6>
+                            </div>
+                            <span class="text-value">$8.04</span>
+                          </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between" total">
+                          <div>
+                            <h6 class="my-0">Total</h6>
+                          </div>
+                          <span class="text-value">$188.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between confirm-payment">
+                          <button type="submit" class="btn btn-secondary w-100 py-3">Confirm Payment</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between confirm-payment">
+                            <button type="submit" class="btn btn-secondary w-100 py-3">Cash Payment</button>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- end of row2 -->
+    </div>
+    
+    <script>
+      $("#alert-btn").click(function() {
+        $("div.success").fadeIn(300).delay(1500).fadeOut(400);
+      });
+    </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/fundraiser-front-end.js"></script>
+  </body>
+</html>
